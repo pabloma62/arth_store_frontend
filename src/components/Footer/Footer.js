@@ -14,7 +14,7 @@ const Footer = () => {
     <Box as='footer' width='full' display='flex' flexDirection='column' alignItems='center' justifyContent='center' opacity={0.4} fontSize='sm'>
       <VStack>
         {
-          colorMode === 'light' ? <SvgLogo width='40' height='40' /> : <SvgLogoD width='40' height='40' />
+          colorMode === 'light' ? <SvgLogo width='28' height='28' /> : <SvgLogoD width='28' height='28' />
         }
         <Text textAlign='center' fontSize='xs' color={textColor}>{t('layout.footer_text', { year: new Date().getFullYear() })}</Text>
       </VStack>
