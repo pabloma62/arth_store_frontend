@@ -17,9 +17,6 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   const { language, toggleLanguage } = useLanguage()
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const boxShadowColor = colorMode === 'light'
-    ? '0px 3px 8px rgba(0, 0, 0, 0.5)'
-    : '0px 6px 10px rgba(178, 0, 64, 0.5)'
 
   return (
     <>
@@ -35,10 +32,10 @@ const Navbar = () => {
         wrap='wrap'
         paddingY={2}
         paddingX={6}
-        bg='#B20040'
+        bgGradient='linear(to-b, #B20040, #C2495D, #D2727E, #E2959E)'
         color='white'
         opacity='0.8'
-        boxShadow={boxShadowColor}
+        boxShadow='0px 3px 8px rgba(0, 0, 0, 0.5)'
       >
         <Box
           as='button'
