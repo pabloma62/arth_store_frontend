@@ -9,7 +9,16 @@ function App () {
   return (
     <MainLayout>
       <Box textAlign='center' fontSize='xl'>
-        <Text mb={4}>{t('landing_page.introduction')}</Text>
+        <Text
+          fontSize={['2xl', '3xl', '5xl']}
+          fontWeight='bold'
+          bgGradient='linear(to-l, #B20040, #C2495D, #D2727E, #E2959E)'
+          color='transparent'
+          bgClip='text'
+          textAlign='center'
+        >
+          {t('landing_page.introduction')}
+        </Text>
         <Button colorScheme='blue'>Haz clic aquí</Button>
       </Box>
     </MainLayout>
